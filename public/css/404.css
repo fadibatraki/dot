@@ -1,0 +1,38 @@
+.not-found-sec {
+    margin-top: 150px;
+    position: relative;
+}
+
+.four-0-four-image {
+    display: block;
+    margin: 60px auto;
+    height: 400px;
+}
+
+.four-0-four-msg {
+    text-align: center;
+    text-transform: capitalize;
+    color: #ed1c24;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.four-0-four-msg a {
+    color: #ed1c24;
+    font-family: cairo-bold;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 321px)and (max-width:768px) {
+    .four-0-four-msg {
+        position: relative;
+        left: auto;
+        transform: translateX(0%);
+        margin-top: -35px;
+    }
+    .four-0-four-image {
+        height: auto;
+    }
+}

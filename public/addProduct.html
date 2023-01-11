@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot digital : Add product</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/png/Dot_plus.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+</head>
+
+<body>
+
+    <img src="../img/loader.gif" alt="loader" class="loader img-fluid">
+
+    <div class="alert-box">
+        <img src="../img/error.png" alt="error" class="alert-img img-fluid">
+        <p class="alert-msg"></p>
+    </div>
+    <img src="../img/dot logo red.png" alt="logo" class="logo img-fluid">
+
+    <div class="form container form-container">
+        <p class="center-admin-name">Hello - <span class="admin-name"></span></p>
+
+        <input type="text" id="product-id" disabled>
+        <input type="text" id="product-name" placeholder="product name">
+        <input type="text" id="product-manufactor" placeholder="manufature">
+        <input type="text" id="product-model" placeholder="model code">
+        <input type="text" id="product-tag-name-arabic" placeholder="tag name arabic">
+        <input type="text" id="product-tag-name-english" placeholder="tag name english" disabled>
+        <input type="text" id="product-tag-name-china" placeholder="tag name china">
+        <input type="text" id="product-color" placeholder="Product color">
+        <input type="text" id="product-package-size" placeholder="Package size">
+        <input type="text" id="product-weight" placeholder="product weight (product + package) Kg">
+        <input type="text" id="product-inner-box" placeholder="INNERBOX (10pcs) size and weight">
+        <input type="text" id="product-ctn-size" placeholder="CTN size L*W*H">
+        <input type="text" id="product-link" placeholder="Link">
+        <!--<input type="text" id="product-category" placeholder="product category"> -->
+        <select name="category" id="select" class="form-select" aria-label="select">
+            <option value="0" selected>Category</option>
+            <option value="flash-drive">Flash Drive</option>
+            <option value="tf-card">TF Card</option>
+            <option value="cabel">Cabel</option>
+
+            <option value="power-bank">Power Bank</option>
+            <option value="audio">Audio</option>
+            <option value="charger">Charger</option>
+            <option value="others">others</option>
+        </select>
+        <textarea type="text" id="product-specification" placeholder="Description"></textarea>
+        <textarea type="text" id="product-tags" placeholder="enter tags"></textarea>
+
+        <input type="checkbox" class="checkbox" id="exclusive">
+        <label for="exclusive">exclusive?(Private)</label>
+        <!--Product images -->
+        <div class="product-info container">
+            <div class="product-image">
+                <p class="text">product images</p>
+            </div>
+            <div class="upload-image-sec">
+                <!--upload inputs-->
+                <p class="text"><img src="../img/camera.png" alt="upload image" class="img-fluid"> upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload" hidden>
+                    <label for="first-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="second-file-upload" hidden>
+                    <label for="second-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="third-file-upload" hidden>
+                    <label for="third-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="fourth-file-upload" hidden>
+                    <label for="fourth-file-upload" class="upload-image"></label>
+                </div>
+            </div>
+            <div class="upload-image-sec">
+                <!--upload inputs-->
+                <p class="text"><img src="../img/camera.png" alt="upload image" class="img-fluid">upload package images</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="packageupload" id="first-package" hidden>
+                    <label for="first-package" class="upload-image"></label>
+
+                    <input type="file" class="packageupload" id="second-package" hidden>
+                    <label for="second-package" class="upload-image"></label>
+
+                    <input type="file" class="packageupload" id="third-package" hidden>
+                    <label for="third-package" class="upload-image"></label>
+
+                </div>
+            </div>
+            <div class="upload-image-sec">
+                <!--upload inputs-->
+                <p class="text"><img src="../img/camera.png" alt="upload video" class="img-fluid"> upload video</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="videoupload" id="first-video-upload" hidden>
+                    <label for="first-video-upload" class="upload-image"></label>
+                    <video src="" id="first-video" class="upload-image hide" autoplay></video>
+
+                    <input type="file" class="videoupload" id="second-video-upload" hidden>
+                    <label for="second-video-upload" class="upload-image"></label>
+                    <video src="" id="second-video" class="upload-image hide" autoplay></video>
+
+
+                </div>
+            </div>
+            <div class="select-sizes">
+                <p class="text">category available - <span class="category-type"></span> </p>
+                <div class="sizes-inputs">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn add-btn" id="addBtn">add product</button>
+            <button class="btn save-btn" id="saveBtn">save draft</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/token.js"></script>
+<script src="../js/addProduct.js"></script>
+
+</html>

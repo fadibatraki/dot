@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post - </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Dot_plus.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/support.css">
+
+</head>
+
+<body>
+    <header id="nav"></header>
+    <section class="post-details">
+        <div class="row" id="postPage">
+            <div class="image-slider">
+                <img src="" alt="zoomed" id="zoom" class="zoom">
+            </div>
+            <div class="details container col">
+                <div class="container col">
+                    <h2 class="heading-english"></h2>
+                    <h3 class="heading-arabic"></h3>
+                    <div class="des" dir="auto">
+
+                    </div>
+                    <div class="social-media-buttons">
+                        <a href="https://www.facebook.com/dootdigital" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://wa.me/963934408081" target="_blank" class="social-button whatsapp"><i class="fa fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/dotdigitalsy" target="_blank" class="social-button instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://t.me/dotdigitachannel" target="_blank" class="social-button telegram"><i class="fa fa-telegram"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-for-card-slider">
+
+    </section>
+
+    <footer id="footerContainer"></footer>
+</body>
+<script src="../js/slider.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js "></script>
+<script src="../js/script.js "></script>
+<script src="../js/post.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/search-nlp.js"></script>
+<script src="../js/zoomsl.js"></script>
+<script src="../js/support.js"></script>
+<script>
+    $(window).resize(function() {
+        if ($(window).width() <= 992) {
+            $('#productPage').addClass('container')
+            $('.image-slider').addClass('col-lg-4 col-sm-6 col-xs-12')
+            $('.details').addClass('col-lg-4 col-sm-6 col-xs-12')
+        } else {
+            $('#productPage').removeClass('container')
+            $('.image-slider').removeClass('col-lg-4 col-sm-6 col-xs-12')
+            $('.details').removeClass('col-lg-4 col-sm-6 col-xs-12')
+        }
+    })
+</script>
+
+</html>

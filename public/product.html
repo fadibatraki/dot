@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Dot_plus.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/support.css">
+
+</head>
+
+<body>
+    
+    <header id="nav"></header>
+    <section class="product-details">
+        <div class="row" id="productPage">
+            <div class="first-section-container row">
+            <div class="image-slider">
+                <img src="" alt="zoomed" id="zoom" class="zoom">
+                <div class="product-images">
+                    <img src="" alt="" id="tryImg" class="img-fluid active">
+                    <img src="" alt="" class="img-fluid">
+                    <img src="" alt="" class="img-fluid">
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="details container row">
+                <div class="container col">
+                    <div class="container">
+                        <h2 class="product-brand"></h2>
+                        <p class="product-short-des"></p>
+                        <h6>Scroll for more information</h6>
+                    </div>
+                    <div class="details-type container">
+                        <p class="product-sub-heading" id="tf-flash">Capacity</p>
+                        <div class="cat-container">
+                        </div>
+                        <!-- <div class="btns-container"> FUTURE FEATURE FOR PURCHASING
+                            <button class="product-btn cart-btn">
+                        add to cart
+                    </button>
+                            <button class="product-btn wishlist-btn">
+                                add to wishlist
+                        </button>
+                        </div> -->
+                    </div>
+                </div>
+                <!--<span class="product-quant">Qunatity: 3655</span>-->
+                <div class="container col">
+                    <h2 class="heading">Description</h2>
+                    <div class="des">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="product-packages-images-container">
+                <div class="packages-images-container">
+                    <img src="" alt="" width="100%" class="img-fluid">
+                    <img src="" alt="" width="100%" class="img-fluid">
+                    <img src="" alt="" width="100%" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="more-information">
+                <div class="max-w-base mx-auto w-full-relative" style="max-width:1200px;">
+                    <div class="md:mx-4">
+                        <h2 class="text-2xl mb-10">Specs</h2>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">Product</p>
+                            <div class="manuals-sub-text" id="product-name"></div>
+                        </div>
+                        
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">Model code</p>
+                            <div class="manuals-sub-text" id="product-model"></div>
+                        </div>
+
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">Color</p>
+                            <div class="manuals-sub-text" id="product-color"></div>
+                        </div>
+
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">package size (APPROX CBM )
+                            </p>
+                            <div class="manuals-sub-text" id="product-package-size"></div>
+                        </div>
+
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">weight (product +package )
+                            </p>
+                            <div class="manuals-sub-text" id="product-weight"></div>
+                        </div>
+
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">INNER BOX ( 10 PCS ) SIZE AND WEIGHT 
+                            </p>
+                            <div class="manuals-sub-text" id="product-inner-box"></div>
+                        </div>
+
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">CTN SIZE L*W*H cm		
+                            </p>
+                            <div class="manuals-sub-text" id="product-ctn-size"></div>
+                        </div>
+
+                        <div class="w-width mb-pad md">
+                            <p class="manuals-text-small">Link	
+                            </p>
+                            <div class="manuals-sub-text" id="product-link"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-section" id="videosection">
+                <video src="" class="video en" autoplay controls></video>
+                <video src="" class="video ar" autoplay controls></video>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-for-card-slider">
+
+    </section>
+
+    <footer id="footerContainer"></footer>
+</body>
+<script src="../js/support.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js "></script>
+<script src="../js/script.js "></script>
+<script src="../js/slider.js"></script>
+<script src="../js/product.js"></script>
+<script src="../js/search-nlp.js"></script>
+<script src="../js/zoomsl.js"></script>
+<script>
+    $(window).resize(function() {
+        if ($(window).width() <= 992) {
+            $('#productPage').addClass('container')
+            $('.image-slider').addClass('col-lg-4 col-sm-6 col-xs-12')
+            $('.details').addClass('col-lg-4 col-sm-6 col-xs-12')
+        } else {
+            $('#productPage').removeClass('container')
+            $('.image-slider').removeClass('col-lg-4 col-sm-6 col-xs-12')
+            $('.details').removeClass('col-lg-4 col-sm-6 col-xs-12')
+        }
+    })
+
+    var language = window.navigator.userLanguage || window.navigator.language;
+    let videoEn = document.querySelector('.en')
+    let videoAr = document.querySelector('.ar')
+    if (language.toLowerCase().includes('en'))
+        videoAr.style.display = 'none'
+    else if (language.toLowerCase().includes('ar'))
+        videoEn.style.display = 'none'
+</script>
+
+
+</html>

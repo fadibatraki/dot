@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>يانصيب دوت </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Dot_plus.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/lottery.css">
+
+</head>
+
+<body>
+    <section class="main-section">
+        <img src="../img/loader.gif" alt="" class="loader">
+        <div class="alert-box">
+            <img src="../img/error.png" alt="" class="img-fluid alert-img">
+            <p class="alert-msg">Error message</p>
+        </div>
+        <div class="alert-box success">
+            <img src="../img/success.png" alt="" class="img-fluid alert-img">
+            <p class="alert-msg success-msg">Error message</p>
+        </div>
+        <div class="container form-container">
+
+            <img src="../img/png/christmas-logo.png" alt="" class="dot-logo img-fluid">
+            <div class="info-container">
+                <div class="submit-area">
+                    <img src="../img/png/2.png" alt="svg" class="img-fluid" id="sendImg">
+                    <button class=" btn submit-lottery" id="submitBtn">أرسل</button>
+                </div>
+                <div class="input-div">
+                    <input type="text" class="input-form " id="userId" disabled>
+                    <p dir="auto" style="margin:20px 10px">Id number: </p>
+
+                </div>
+                <div class="input-div" dir="auto ">
+                    <p dir="auto ">الأسم: </p>
+                    <input type="text" class="input-form" id="username" autocomplete="off">
+                </div>
+                <div class="input-div" dir="auto ">
+                    <p dir="auto ">رقم الهاتف: </p>
+                    <input type="text" class="input-form" id="phonenumber" autocomplete="off">
+                </div>
+                <div class="input-div text-area" dir="auto">
+                    <img src="../img/png/1.png" alt="svg" class="img-fluid">
+                    <p dir="auto">رأيك فينا:</p>
+                    <textarea class="input-form" id="useropn" placeholder="نعمل من أجلكم, نطمح لإرضاء الجميع شاكرين انتقاداتكم ورأيكم ومساعدتكم لنا" style="font-size: 0.9em;color: #ed1c24;"></textarea>
+                </div>
+                <div class="input-div vote-div" dir="auto">
+                    <p dir="auto">أكتر منتج أثار إعجابك</p>
+                    <div class="vote-products container">
+
+                        <input type="checkbox" class="checkbox" id="powerbank">
+                        <label for="powerbank" class="label-check"><img src="../img/png/power.png" alt="power bank" class="img-fluid vote-img"> </label>
+                        <input type="checkbox" class="checkbox" id="cable">
+                        <label for="cable" class="label-check"><img src="../img/png/cable.png" alt="cable" class="img-fluid vote-img"> </label>
+                        <input type="checkbox" class="checkbox" id="charger">
+                        <label for="charger" class="label-check"><img src="../img/png/charger.png" alt="charger" class="img-fluid vote-img"> </label>
+
+                        <input type="checkbox" class="checkbox" id="memorycard">
+                        <label for="memorycard" class="label-check"><img src="../img/png/memorycard.png" alt="power bank" class="img-fluid vote-img"> </label>
+                        <input type="checkbox" class="checkbox" id="flashdrive">
+                        <label for="flashdrive" class="label-check"><img src="../img/png/flashdrive.png " alt="cable" class="img-fluid vote-img "> </label>
+                        <input type="checkbox" class="checkbox" id="battery">
+                        <label for="battery" class="label-check"><img src="../img/png/battery.png" alt="charger" class="img-fluid vote-img"> </label>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js "></script>
+<script src="../js/token.js"></script>
+<script src="../js/lottery.js"></script>
+
+</html>

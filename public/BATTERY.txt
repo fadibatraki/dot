@@ -1,0 +1,27 @@
+BATTERY
+
+Safety Instructions:
+Dot Digital battery cells include flammable objects
+such as  the organic solvent
+If the handling is missed there will be a possibility
+that the battery cell ruptures  flames or hot or it will
+cause the deterioration or damage of the battery cell
+
+Warranty Period of Battery:
+Dot Digital Plus offers a warranty period of a battery cell
+for three months after shipment, However even within
+ the warranty period it will only be responsible for the defect 
+of cells related to the manufacturing process
+Any other problem caused by malfunction of the equipment
+ or inappropriate use of the cell will not be covered
+under this warranty
+
+
+Exemption from Warranty:
+Will not be responsible for the trouble that occurred
+by handling outside of the precautions in this specification
+Will not be responsible for the trouble that occurred
+by matching electric circuit battery pack, terminal, and charger 
+In case  of any problem, an analysis must be conducted to determine
+the cause of failure
+Will not be responsible for any fault resulted from battery pack assembly

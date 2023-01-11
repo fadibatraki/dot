@@ -1,0 +1,149 @@
+body {
+    background: #f9f9f9;
+}
+
+.success {
+    z-index: -1;
+}
+
+.success-msg {
+    color: green;
+}
+
+section.main-section {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+img.dot-logo {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+}
+
+.info-container {
+    display: block;
+    margin: 0 auto;
+    padding: 2px 4px;
+}
+
+.info-container .input-div {
+    display: flex;
+    margin: 15px;
+    padding: 5px;
+    direction: rtl;
+}
+
+.info-container .input-div:nth-child(1) p {
+    line-height: 70px;
+    direction: ltr;
+    padding-right: 15px;
+}
+
+.input-div:nth-child(2) input {
+    margin-right: 45px;
+}
+
+.input-div textarea {
+    height: 120px;
+    width: 50%;
+}
+
+.input-div p {
+    font-size: 1em;
+    color: #010101;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: right;
+    width: 20%;
+}
+
+.vote-div {
+    margin-top: 5%;
+}
+
+.vote-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.vote-products input[type="checkbox"] {
+    display: none;
+}
+
+.vote-products label {
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.vote-img {
+    transition: .5s;
+}
+
+.vote-products label:hover .vote-img {
+    transform: scale(1.2);
+}
+
+.checkbox:checked+.label-check {
+    border: 3px solid #ed2c14;
+}
+
+.submit-area {
+    position: absolute;
+    left: -15%;
+    width: 40%;
+    height: 25%;
+}
+
+.text-area {
+    position: relative;
+}
+
+.text-area img {
+    position: absolute;
+    transform: rotateY(180deg);
+    left: 142px;
+    top: -76px;
+    width: 25%;
+}
+
+.submit-area img {
+    position: absolute;
+    top: -100px;
+    right: 170px;
+    z-index: 5;
+    transform: rotateY(180deg);
+    width: 45%;
+}
+
+.submit-lottery {
+    position: relative;
+    padding: 12px 20px;
+    font-size: 1.5em;
+    margin: 5%;
+    box-sizing: border-box;
+    width: 45%;
+    height: 60%;
+    background-color: #ed2c14;
+    color: #fff;
+    border-radius: 25px;
+    left: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .submit-lottery {
+        margin: unset;
+    }
+    .text-area img {
+        left: 117px;
+    }
+}

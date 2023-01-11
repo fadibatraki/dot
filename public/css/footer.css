@@ -1,0 +1,130 @@
+footer {
+    position: relative;
+    width: 100%;
+    padding: 0 10vw;
+    padding-bottom: 80px;
+    background: #ed1c24;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-content .footer-logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-ul-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-category {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title {
+    grid-column: span 2;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: tajwal-bold;
+}
+
+.footer-category .footer-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: tajwal-bold;
+}
+
+.footer-category .footer-link:hover {
+    color: #fff;
+}
+
+footer .footer-title,
+footer .info {
+    color: rgba(255, 255, 255, 0.75);
+    margin: 20px 0;
+}
+
+footer .info span,
+footer .footer-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footer-title {
+    margin-top: 80px;
+    padding: 2px 5px;
+    color: #fff;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .footer-content {
+        margin-left: -15%;
+    }
+    .footer-logo {
+        width: 60%;
+    }
+    .footer-category {
+        width: 100px;
+        grid-gap: 5px;
+        margin-bottom: 20px;
+    }
+    .category-title{
+        font-size: 15px;
+    }
+    section.banner .banner-cont ul li,
+    footer ul li {
+    margin: 0 !important;
+    font-size: 15px;
+    font-size: 15px;
+}
+}
+
+@media only screen and (min-width: 321px)and (max-width:768px) {
+    .footer-social-container {
+        padding: 5px 5px;
+        font-size: 0.9em;
+    }
+    .footer-category {
+        width: 100px;
+        grid-gap: 5px;
+        margin-bottom: 20px;
+
+    }
+    .category-title{
+        font-size: 15px;
+    }
+    section.banner .banner-cont ul li,
+    footer ul li {
+    margin: 0 !important;
+    font-size: 15px;
+    font-size: 15px;
+}
+    .social-link {
+        margin-left: 0 !important;
+    }
+    .footer-social-container div:nth-child(1) {
+        margin-right: 4px;
+    }
+    .footer-social-container div:nth-child(1) .social-link:nth-child(2) {
+        margin-left: unset;
+    }
+    .footer-social-container div:nth-child(2) .social-link:nth-child(1),
+    .footer-social-container div:nth-child(2) .social-link:nth-child(3) {
+        margin-right: 8px;
+    }
+}

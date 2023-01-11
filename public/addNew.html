@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot digital : Add News</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Dot_plus.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+</head>
+
+<body>
+
+    <img src="../img/loader.gif" alt="loader" class="loader img-fluid">
+
+    <div class="alert-box">
+        <img src="../img/error.png" alt="error" class="alert-img img-fluid">
+        <p class="alert-msg"></p>
+    </div>
+    <img src="../img/dot logo red.png" alt="logo" class="logo img-fluid">
+
+    <div class="form container form-container">
+        <p class="center-admin-name">Hello - <span class="admin-name"></span></p>
+
+        <input type="text" id="post-id" disabled>
+        <input type="text" id="post-english-title" placeholder="Post English Title">
+        <input type="text" id="post-arabic-title" placeholder="Post Arabic Title">
+        <input type="text" id="post-date" placeholder="Post Date">
+
+        <textarea type="text" id="post-english-specification" placeholder="english specification"></textarea>
+        <textarea type="text" id="post-arabic-specification" placeholder="arabic specification"></textarea>
+        <textarea type="text" id="post-tags" placeholder="enter tags"></textarea>
+
+        <input type="checkbox" class="checkbox" id="exclusive">
+        <label for="exclusive">exclusive?(Private)</label>
+        <!--Product images -->
+        <div class="product-info container">
+            <div class="product-image">
+                <p class="text">product images</p>
+            </div>
+            <div class="upload-image-sec">
+                <!--upload inputs-->
+                <p class="text"><img src="../img/camera.png" alt="upload image" class="img-fluid"> upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload" hidden>
+                    <label for="first-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="second-file-upload" hidden>
+                    <label for="second-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="third-file-upload" hidden>
+                    <label for="third-file-upload" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="fourth-file-upload" hidden>
+                    <label for="fourth-file-upload" class="upload-image"></label>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="buttons">
+            <button class="btn add-btn" id="addBtn">add post</button>
+            <button class="btn save-btn" id="saveBtn">save draft</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/token.js"></script>
+<script src="../js/addNew.js"></script>
+
+</html>

@@ -1,0 +1,16 @@
+Model: DT-PB11
+Capacity: 2A (MAX)
+Input: DC 5V - 2A (MAX)
+Input Plug : Micro USB -Type c
+Output : DC 5V - 2.1
+Output Plug : Dual USB
+
+
+
+
+ Warning:
+.Do not dismount , impact, compress-
+.Keep away from fire-
+.Stop using directly if there is a serious heat-
+.Do not expose to high temperature-
+

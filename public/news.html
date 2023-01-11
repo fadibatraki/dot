@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/Dot_plus.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/support.css">
+
+    <title>Dot digital: News</title>
+    <style>
+        .news-container .content .info {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="nav">
+
+    </header>
+    <section class="search-results">
+        <h2 class="heading">Our News </h2>
+        <section class="container" id="news">
+
+        </section>
+
+    </section>
+
+    <footer id="footerContainer">
+
+    </footer>
+</body>
+<script src="../js/slider.js"></script>
+<script src="../js/nav.js"></script>
+<script src="../js/footer.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js "></script>
+<script src="../js/script.js"></script>
+<script src="../js/news.js"></script>
+<script src="../js/support.js"></script>
+
+<script>
+    getNews().then(data => {
+        createPostCards(data, '#news', data.length)
+        $('.news-container').addClass('row')
+        if ($(window).width() <= 992) {
+            $('.post-card').addClass('col')
+        } else {
+            $('.post-card').removeClass('col')
+        }
+    })
+</script>
+
+</html>
